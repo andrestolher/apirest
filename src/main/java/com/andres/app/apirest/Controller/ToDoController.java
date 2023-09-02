@@ -11,7 +11,6 @@ import java.util.List;
 public class ToDoController {
     @Autowired
     private ToDoRepository toDoRepository;
-
     @GetMapping(value = "/tasks")
     public List <Task> getTask(){
         return toDoRepository.findAll();
